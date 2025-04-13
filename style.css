@@ -1,0 +1,131 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+header {
+    background-color: #f3abbd;
+    padding: 2rem;
+    text-align: left;
+    color: #000000;
+  }
+
+h1 {
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+.image-button {
+background: none;
+border: none;
+cursor: pointer;
+padding: 0;
+margin-top: 1rem;
+}
+
+.hidden {
+display: none;
+padding: 1rem;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+margin-top: 1rem;
+}
+
+.image-crop {
+    position: relative;
+    width: 990px;  /* Set desired width */
+    height: 170px; /* Set desired height */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: makes it rounded */
+  }
+  
+/* Make sure image keeps its aspect ratio */
+.image-crop img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center 60%;
+display: block;
+}
+
+/* Text on top of image */
+.overlay-text {
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: bold;
+    z-index: 2; /* ensure it's on top */
+    pointer-events: none;
+    /* background-color: red; */
+  }
+
+.burger-img {
+    position: relative;
+    width: 990px;  /* Set desired width */
+    height: 170px; /* Set desired height */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+.burger-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+}
+
+  .ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  

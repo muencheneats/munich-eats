@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munich Eats</title>
+  <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <header>
+    <h1>🍽️ Munich Eats</h1>
+    <p>Curated food gems around the city—from breakfast to upscale dining!</p>
+  </header>
+
+  <main>
+    
+    <button onclick="toggleSection('breakfast')" class="image-button">
+        <div class="image-crop">
+            <img src="img/cafe_gundel.JPG" alt="Menu">
+            <span class="overlay-text">🥨 Breakfast Spots</span>
+        </div>
+    </button>
+
+    <div id="breakfast" class="hidden">
+        <section>
+        <h2>🥨 Breakfast Spots</h2>
+        <div class="food-item">
+            <h3>Café Frischhut</h3>
+            <p>Legendary Schmalznudeln—crispy outside, fluffy inside.</p>
+            <a href="https://goo.gl/maps/uEJixHfSzvs">📍 View on Map</a>
+        </div>
+        </section>
+    </div>
+
+    <button onclick="toggleSection('italian')" class="image-button">
+        <div class="image-crop">
+            <img src="img/pasta.jpeg" alt="Menu">
+            <span class="overlay-text">🍝 Italian Flavors</span>
+        </div>
+    </button>
+
+    <section id="italian" class="hidden">
+      <h2>🍝 Italian Flavors</h2>
+      <div class="food-item">
+        <h3>Hirschgarten</h3>
+        <p>One of the largest beer gardens in the world. Great roast pork & pretzels!</p>
+        <a href="https://goo.gl/maps/VyH6MTX5fh1YrGZb6">📍 View on Map</a>
+      </div>
+    </section>
+
+    <button onclick="toggleSection('burger')" class="image-button">
+        <div class="burger-img">
+            <img src="img/burger.jpeg" alt="Menu">
+            <span class="overlay-text">🍔 Top Burgers in Munich</span>
+        </div>
+    </button>
+
+    <section id="burger" class="hidden">
+        <h2>🍔 Top Burgers in Munich</h2>
+        <div class="food-item">
+            <h3>Hirschgarten</h3>
+            <p>One of the largest beer gardens in the world. Great roast pork & pretzels!</p>
+            <a href="https://goo.gl/maps/VyH6MTX5fh1YrGZb6">📍 View on Map</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleSection(id) {
+          const section = document.getElementById(id);
+          section.style.display = section.style.display === "block" ? "none" : "block";
+        }
+      </script>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ in Munich</p>
+  </footer>
+</body>
+</html>
